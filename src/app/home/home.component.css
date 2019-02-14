@@ -1,0 +1,55 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#displayTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top:10px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 4px 5px 3px 4px rgba(0, 0, 0, 0.5)
+  }
+  
+  #displayTable td, #displayTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #displayTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #displayTable tr:hover {background-color: #ddd;}
+  
+  #displayTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightgrey;
+    color: #333;
+  
+  }
+  .output{
+
+    background: orange;
+    color: white;
+  }
+  .headerStyle {
+  
+    background-color: lightgrey;
+    height: 60px;
+    color: #333;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+  }
+  
+  .selectStyle{
+    float: left;
+    width: 24%;
+    height: 50%;
+    margin: 10px;
+    border: 2px solid #333;
+  }

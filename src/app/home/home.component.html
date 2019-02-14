@@ -1,0 +1,31 @@
+
+<div class="d-flex align-items-center headerStyle" >
+        <select [ngModel]="selectedSymbol" (ngModelChange)="onChange($event)" name="sel2" class="selectStyle">
+            <option [value]="symbol" *ngFor="let symbol of listOfSymbols">{{symbol}}</option>
+        </select>
+        <span style="float:left;margin-left:120px;margin-top:15px">Finance Data - {{selectedSymbol}}</span>
+    </div>
+    
+<table id="displayTable">
+  
+    <tr>
+      <th>No.</th>
+      <th>Date</th>
+      <th>Open Price</th>
+      <th>Close Price</th>
+      <th>Deviation</th>
+
+    </tr>
+  
+  
+    <tr *ngFor ="let d of displayDataArray | slice:0:15;let i = index">
+      <td>{{i+1}}</td>
+      <td>{{d.month}}</td>
+      <td>{{d.open}}</td>
+      <td>{{d.close}}</td>
+      <td>{{d.deviation}}</td>
+    </tr>
+  <tr>
+    <td colspan = "5" class = "output">Standard Deviation  = {{stdDeviation}}</td>
+  </tr>
+</table>
